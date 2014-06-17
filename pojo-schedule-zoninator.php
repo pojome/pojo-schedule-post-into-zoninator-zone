@@ -7,6 +7,8 @@ Description: Inserts scheduled posts into the Zoninator zones on publication
 Author: Vladimir Smotesko, Boyle Software, Pojo Team
 Version: 1.0.0
 Author URI: http://pojo.me/
+Text Domain: schedule-zoninator
+Domain Path: /languages/
 License: GPLv2 or later
 
 This program is free software; you can redistribute it and/or
