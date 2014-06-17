@@ -102,7 +102,7 @@ final class Pojo_Schedule_Zoninator {
 		add_action( 'save_post', array( $this, 'save_post' ) );
 		add_action( 'publish_future_post', array( $this, 'publish_future_post' ) );
 	}
-
+	
 	public function zoninator_not_found_notice() {
 		?>
 		<div class="error">
