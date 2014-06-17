@@ -93,6 +93,8 @@ final class Pojo_Schedule_Zoninator {
 		} else {
 			add_action( 'admin_notices', array( $this, 'zoninator_not_found_notice' ) );
 		}
+
+		load_plugin_textdomain( 'schedule-zoninator', false, basename( dirname( __FILE__ ) ) . '/languages' );
 	}
 
 	private function init_plugin() {
