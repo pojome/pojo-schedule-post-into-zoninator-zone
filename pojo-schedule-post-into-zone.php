@@ -70,18 +70,9 @@ if ( ! class_exists( 'Schedule_Zoninator' ) ):
 
 		public function metaboxes_zone( $post ) {
 			$available_zones  = $this->zoninator->get_zones();
-			$selected_zone_id = get_metadata(
-				'post',
-				$post->ID,
-				self::zone_id_key,
-				true
-			);
-			$current_position = get_metadata(
-				'post',
-				$post->ID,
-				self::position_key,
-				true
-			);
+			$selected_zone_id = get_post_meta( $post->ID, self::zone_id_key, true );
+			$current_position = get_post_meta( $post->ID, self::position_key, true );
+			
 			wp_nonce_field( self::nonce_field, self::nonce_field );
 			?>
 			<p>
