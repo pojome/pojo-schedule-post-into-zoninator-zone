@@ -54,23 +54,23 @@ final class Pojo_Schedule_Zoninator {
 	 * The whole idea of the singleton design pattern is that there is a single
 	 * object therefore, we don't want the object to be cloned.
 	 *
-	 * @since 2.0.7
+	 * @since 1.0.1
 	 * @return void
 	 */
 	public function __clone() {
 		// Cloning instances of the class is forbidden
-		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'schedule-zoninator' ), '2.0.7' );
+		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'schedule-zoninator' ), '1.0.1' );
 	}
 
 	/**
 	 * Disable unserializing of the class
 	 *
-	 * @since 2.0.7
+	 * @since 1.0.1
 	 * @return void
 	 */
 	public function __wakeup() {
 		// Unserializing instances of the class is forbidden
-		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'schedule-zoninator' ), '2.0.7' );
+		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'schedule-zoninator' ), '1.0.1' );
 	}
 
 	/**
