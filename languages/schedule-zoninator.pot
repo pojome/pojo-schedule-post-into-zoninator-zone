@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pojo-schedule-post-into-zoninator-zone 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-17 17:10+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: pojo-schedule-zoninator.php:62 pojo-schedule-zoninator.php:73
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: pojo-schedule-zoninator.php:111
+msgid ""
+"Zoninator plugin is not installed or not activated! Zoninator schedule will "
+"not work."
+msgstr ""
+
+#: pojo-schedule-zoninator.php:123
+msgid "Schedule post into zone"
+msgstr ""
+
+#: pojo-schedule-zoninator.php:137
+msgid "Zone"
+msgstr ""
+
+#: pojo-schedule-zoninator.php:141
+msgid "Select zone"
+msgstr ""
+
+#: pojo-schedule-zoninator.php:156
+msgid "Position"
+msgstr ""
+
+#: pojo-schedule-zoninator.php:168
+msgid ""
+"You have selected only one setting. Post will not be put into zone without "
+"both settings."
+msgstr ""
+
+#: pojo-schedule-zoninator.php:172
+msgid "Your scheduled post will be put into the selected zone."
+msgstr ""
+
+#: pojo-schedule-zoninator.php:175
+msgid "Position is a number, usually from 1 to 10."
+msgstr ""

@@ -50,7 +50,7 @@ module.exports = function(grunt) {
 		pot: {
 			options:{
 				text_domain: 'schedule-zoninator',
-				dest: 'language/',
+				dest: 'languages/',
 				keywords: [
 					// WordPress keywords
 					'__:1',
