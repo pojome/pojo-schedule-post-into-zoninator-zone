@@ -108,8 +108,8 @@ final class Pojo_Schedule_Zoninator {
 		<div class="error">
 			<p>
 				<?php _e(
-					'Zoninator plugin is not installed or not activated! ' .
-					'Zoninator schedule will not work.'
+					'Zoninator plugin is not installed or not activated! Zoninator schedule will not work.',
+					'schedule-zoninator'
 				);
 				?>
 			</p>
@@ -120,7 +120,7 @@ final class Pojo_Schedule_Zoninator {
 	public function add_meta_boxes() {
 		add_meta_box(
 			'schedule_zone',
-			__( 'Schedule post into zone' ),
+			__( 'Schedule post into zone', 'schedule-zoninator' ),
 			array( $this, 'metaboxes_zone' ),
 			'post',
 			'side'
@@ -134,11 +134,11 @@ final class Pojo_Schedule_Zoninator {
 		wp_nonce_field( self::nonce_field, self::nonce_field );
 		?>
 		<p>
-			<label for="<?php echo self::zone_id_key; ?>"><?php _e( 'Zone' ); ?>
+			<label for="<?php echo self::zone_id_key; ?>"><?php _e( 'Zone', 'schedule-zoninator' ); ?>
 			</label><br />
 			<select name="<?php echo self::zone_id_key; ?>"
 			        id="<?php echo self::zone_id_key; ?>">
-				<option value=""><?php _e( 'Select zone' ); ?></option>
+				<option value=""><?php _e( 'Select zone', 'schedule-zoninator' ); ?></option>
 				<?php foreach ( $available_zones as $available_zone ): ?>
 					<option value="<?php echo $available_zone->term_id; ?>"
 						<?php
@@ -153,7 +153,7 @@ final class Pojo_Schedule_Zoninator {
 			</select>
 		</p>
 		<p>
-			<label for="<?php echo self::position_key; ?>"><?php _e( 'Position' ); ?>
+			<label for="<?php echo self::position_key; ?>"><?php _e( 'Position', 'schedule-zoninator' ); ?>
 			</label><br />
 			<input type="number"
 			       value="<?php echo $current_position; ?>"
@@ -165,14 +165,14 @@ final class Pojo_Schedule_Zoninator {
 			( ! $selected_zone_id && $current_position )
 		): ?>
 			<p>
-				<?php _e( 'You have selected only one setting. Post will not be put into zone without both settings.' ); ?>
+				<?php _e( 'You have selected only one setting. Post will not be put into zone without both settings.', 'schedule-zoninator' ); ?>
 			</p>
 		<?php endif; ?>
 		<p class="description">
-			<?php _e( 'Your scheduled post will be put into the selected zone.' ); ?>
+			<?php _e( 'Your scheduled post will be put into the selected zone.', 'schedule-zoninator' ); ?>
 		</p>
 		<p class="description">
-			<?php _e( 'Position is a number, usually from 1 to 10.' ); ?>
+			<?php _e( 'Position is a number, usually from 1 to 10.', 'schedule-zoninator' ); ?>
 		</p>
 	<?php
 	}
